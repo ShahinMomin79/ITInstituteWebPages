@@ -1,0 +1,111 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    margin: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.logout-button {
+    margin-top: auto;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.profile-section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.skills-attendance {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.skills-chart, .attendance-chart {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 48%;
+}
+
+.tests-courses {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tests, .ongoing-courses {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 48%;
+}
+
+.teachers-rewards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teachers, .rewards {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 48%;
+}
+
+.completed {
+    color: green;
+}
+
+.inProcess {
+    color: orange;
+}
+
+.incomplete {
+    color: red;
+}

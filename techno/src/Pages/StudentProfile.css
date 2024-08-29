@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    height: 700px;
+    /* margin-top: 200px; */
+    
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #4c68ff, #3c4dff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.profile h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile p {
+    margin: 5px 0;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.menu {
+    margin-top: 100px;
+    width: 100%;
+   
+   
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: background 0.3s ease;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.preferences {
+    margin-top: 20px;
+}
+
+.logout {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #ff3333;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    width: 32%;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #333;
+}
+.profile{
+    margin-top: 60px;
+}
+#interestChart{
+    margin: 80px 0px 0px 15px;
+}
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px;
+}
+
+.reward-item {
+    text-align: center;
+}
+
+.reward-item img {
+    width: 50px; /* Adjust size as needed */
+    height: 20px;
+    object-fit: contain;
+}
+
+.reward-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+.teacher-history-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 15px;
+}
+
+.teacher-item {
+    text-align: center;
+}
+
+.teacher-item img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover;
+}
+
+.teacher-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+.courses-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.course-info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.course-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.course-link {
+    text-decoration: none;
+    color: #4c68ff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.course-link:hover {
+    color: #2b4aff;
+}
+
+.learning-time-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.learning-time-chart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.learning-time-chart svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.learning-time-chart circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.learning-time-chart circle:first-child {
+    stroke: #f0f0f0; /* Background circle color */
+}
+
+.learning-time-chart circle:last-child {
+    stroke: #4c68ff; /* Progress bar color */
+    stroke-dasharray: 283; /* 2 * Math.PI * 45 */
+    stroke-dashoffset: calc(283 - (283 * 0.6)); /* 60% Progress (adjust as needed) */
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.learning-time-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.learning-time-text span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.learning-time-text h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.learning-modes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mode-item {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dot-offline {
+    background-color: #ff7b7b; /* Offline mode color */
+}
+
+.dot-online {
+    background-color: #4c68ff; /* Online mode color */
+}
+
+
+/* Add specific styles for each card to match the content in your image */

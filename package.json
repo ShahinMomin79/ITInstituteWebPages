@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@rjsf/core": "^5.20.1",
+    "ajv": "^8.17.1"
+  }
+}

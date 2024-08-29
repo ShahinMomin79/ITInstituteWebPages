@@ -1,0 +1,132 @@
+/* Dashboard.css */
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #5A3EDE;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar .profile-section img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sidebar nav ul li.active, .sidebar nav ul li:hover {
+    background-color: #6847e1;
+}
+
+.logout-button {
+    margin-top: auto;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #a87ee6;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header input {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.finance-section, .courses-section, .instructors-section, .notice-section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.finance-section .finance-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.finance-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.course-card {
+    background-color: #e6d4fa;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.course-card button {
+    background-color: #7e51e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.instructors {
+    display: flex;
+    justify-content: space-around;
+}
+
+.instructors img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.notice-section p {
+    margin: 10px 0;
+}
